@@ -78,6 +78,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:description", content: "Chat with AI — powered by Lovable AI." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
+      { name: "twitter:title", content: "ChatGPT Clone" },
+      { name: "twitter:description", content: "Chat with AI — powered by Lovable AI." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/8860bb65-1ada-41ab-87db-146cee6bfa92/id-preview-23167f4e--e9949df7-a8fa-4269-a560-d090519fddc1.lovable.app-1779901881842.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/8860bb65-1ada-41ab-87db-146cee6bfa92/id-preview-23167f4e--e9949df7-a8fa-4269-a560-d090519fddc1.lovable.app-1779901881842.png" },
     ],
     links: [
       {
