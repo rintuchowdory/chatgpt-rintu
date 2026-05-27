@@ -45,14 +45,10 @@ export function ChatWindow({ threadId, initialMessages, onMessagesChange }: Prop
 
   const isLoading = status === "submitted" || status === "streaming";
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const form = e.currentTarget as HTMLFormElement;
-    const fd = new FormData(form);
-    const text = String(fd.get("message") ?? "").trim();
+  const handleSubmit = (message: { text?: string }) => {
+    const text = (message.text ?? "").trim();
     if (!text || isLoading) return;
     void sendMessage({ text });
-    form.reset();
   };
 
   return (
